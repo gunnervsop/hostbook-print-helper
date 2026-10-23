@@ -34,9 +34,19 @@ Hostbook opens the print dialog instead, so no slip is lost.
 
 The helper checks for a newer version when it starts and every six hours. When
 one is ready, it says so in a notice, in its tray menu and in its window, and
-Hostbook's Device settings says so too. Choose **Download update** and run the
-installer: it installs over the old version and keeps your printer and
-settings. Nothing installs by itself.
+Hostbook's Device settings says so too.
+
+- **Install update** (version 0.4 and later, Windows) downloads the new
+  version, checks it against the fingerprint published with the release, and
+  installs it. The helper closes for under a minute and reopens in the tray
+  with your printer and settings.
+- If nobody installs it, it installs by itself once the helper has been idle
+  for 30 minutes (no slip printed, its window closed).
+- **Download update** opens the installer in your browser instead. Older
+  versions update this way once; after that, updates are automatic.
+
+While the helper is updating, Hostbook uses the print dialog, so no slip is
+lost.
 
 ## Privacy and security
 
